@@ -1,0 +1,19 @@
+2024-04-30 21:06:54.281072+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS tasks ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, name VARCHAR NOT NULL, description VARCHAR NOT NULL, done BOOLEAN NOT NULL DEFAULT false, [*])"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS tasks ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, name VARCHAR NOT NULL, description VARCHAR NOT NULL, done BOOLEAN NOT NULL DEFAULT false, ) [42001-224]
+2024-04-30 21:33:48.865915+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TASK" not found; SQL statement:
+select te1_0.id,te1_0.description,te1_0.done,te1_0.name from task te1_0 [42102-224]
+2024-04-30 21:41:43.906938+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "a9ad1fc0-5708-4845-9b88-8653df78fe0b" [22018-224]
+2024-04-30 21:42:40.943884+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "d7c6b0e2-b0ac-4ebf-b26d-ca2d467a8075" [22018-224]
+2024-04-30 21:45:48.630509+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "9045249e-2689-4319-85ea-10f5e12c4a0d" [22018-224]
+2024-04-30 21:51:55.263880+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "15177114-6fbc-4930-8597-cefdb2be0006" [22018-224]
+2024-04-30 21:54:18.432324+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "93952919-a471-49cc-8673-73a160210d63" [22018-224]
+2024-04-30 21:56:18.384182+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*]IF NOT EXISTS TASK"; expected "identifier"; SQL statement:
+DROP TABLE IF NOT EXISTS TASK [42001-224]
